@@ -3,8 +3,8 @@
 if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page(array(
-		'page_title' 	=> 'Site Manager',
-		'menu_title'	=> 'Site Manager',
+		'page_title' 	=> 'Afflilate Links Manager',
+		'menu_title'	=> 'Afflilate Links',
 		'menu_slug' 	=> 'theme-general-settings',
 		'capability'	=> 'edit_posts',
 		'icon_url' => 'https://casinodeals.club/wp-content/uploads/2020/12/skull.png',
