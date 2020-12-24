@@ -193,6 +193,9 @@ h1, h2 {
     padding-top: 10px;
     margin: 0 auto;
 }
+.space-games-archive-item-button {
+    margin-top: 15px;
+}
 @media screen and (max-width: 767px){
 
 }
