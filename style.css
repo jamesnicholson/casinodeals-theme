@@ -182,9 +182,22 @@ h1, h2 {
     display: inline-block;
     right: auto;
 }
+.space-style-3-casino-header-right{
+    flex-direction: column;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.game-review-item{
+    width: fit-content;
 
+    padding-top: 10px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 767px){
+
+}
 @media only screen and (max-width: 479px) {
-
+ 
     .space-widget{
         width: auto;
     }
