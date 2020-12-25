@@ -206,7 +206,6 @@ h1, h2 {
 }
 @media screen and (max-width: 1200px){
     .space-rating-star-wrap{
-        margin-right: 0px;
         width: 25px;
         height: 25px;
         line-height: 25px;
@@ -237,7 +236,6 @@ h1, h2 {
         width: 20px;
         height: 20px;
         line-height: 20px;
-        margin-right: 0;
     }
 }
 @media only screen and (max-width: 479px) {
@@ -264,4 +262,14 @@ h1, h2 {
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
     }
 }
-
+@media only screen and (max-width: 410px) {
+    .space-games-archive-items{
+        flex-direction: column;
+    }
+    .space-games-archive-item {
+        width: 100% !important;
+    }
+    .space-games-archive-item-img a {
+        height: 175px;
+    }
+}
