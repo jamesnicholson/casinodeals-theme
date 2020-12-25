@@ -204,6 +204,15 @@ h1, h2 {
     border-radius: 5px 5px 0 0;
     font-size: 0;
 }
+.space-games-3-archive-item-ins:hover .space-overlay{
+    background: rgb(0 0 0 / 85%);
+}
+.space-games-3-archive-item-img-wrap{
+    background-size: cover;
+    background-position: center;
+}
+
+
 @media screen and (max-width: 1200px){
     .space-rating-star-wrap{
         width: 25px;
