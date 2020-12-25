@@ -204,6 +204,32 @@ h1, h2 {
     border-radius: 5px 5px 0 0;
     font-size: 0;
 }
+.space-games-3-archive-item-ins:hover .space-overlay{
+    background: rgb(0 0 0 / 85%);
+}
+.space-games-3-archive-item-img-wrap{
+    background-size: cover;
+    background-position: center;
+}
+
+.space-bonuses-archive-item-code:hover .space-bonuses-archive-item-code-value{
+    transition: all .5s ease;
+    color: #ed6a5a !important;
+    border: 2px solid #ed6a5a !important;
+}
+.space-bonuses-archive-item-code-value {
+    color: #fff;
+    border: 2px solid #777777;
+}
+.space-bonuses-archive-item-code-value:hover span{
+    transition: all 0.5s ease;
+    color: #fff !important;
+}
+
+
+
+
+
 @media screen and (max-width: 1200px){
     .space-rating-star-wrap{
         width: 25px;
