@@ -77,7 +77,7 @@ if ($src_background_desktop) {
 					<div class="space-style-3-casino-header-left-ins relative">
 						<div class="space-style-3-casino-header-logo-box relative">
 							<?php $src = wp_get_attachment_image_src(get_post_thumbnail_id(), 'mercury-270-270'); if ($src) { ?>
-							<img src="<?php echo esc_url($src[0]); ?>" alt="<?php the_title_attribute(); ?>">
+									<img src="<?php echo get_the_post_thumbnail_url( null, 'full' ); ?>" alt="<?php the_title_attribute(); ?>">
 							<?php } ?>
 						</div>
 					</div>

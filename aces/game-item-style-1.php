@@ -47,8 +47,8 @@
 	<div class="space-games-archive-item-ins relative">
 		<?php $image = get_field('game_cover_image'); if( $image ) { ?>
 		<div class="space-games-archive-item-img relative">
-			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-				<img src="<?php echo esc_url($image); ?>" alt="<?php the_title_attribute(); ?>">
+			<a style="background:url(<?php echo esc_url($image); ?>)" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+				<?php echo $button_title ?>
 			</a>
 		</div>
 		<?php } ?>

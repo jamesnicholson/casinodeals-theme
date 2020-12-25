@@ -196,8 +196,49 @@ h1, h2 {
 .space-games-archive-item-button {
     margin-top: 15px;
 }
+.space-games-archive-item-img a{
+    width: 100%;
+    height: 140px;
+    display: block;
+    background-size: 100% 100% !important;
+    border-radius: 5px 5px 0 0;
+    font-size: 0;
+}
+@media screen and (max-width: 1200px){
+    .space-rating-star-wrap{
+        margin-right: 0px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px){
+    .space-games-archive-item-img a{
+        height: 200px;
+    }
+    .game-review-item{
+        padding-top:0;
+    }
+}
+
 @media screen and (max-width: 767px){
 
+    .space-games-archive-item-img a{
+        height: 150px;
+    }
+    .game-review-item{
+        padding-top:0;
+    }
+    .space-rating-star-icon{
+        font-size: 15px;
+    }
+    .space-rating-star-wrap{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        margin-right: 0;
+    }
 }
 @media only screen and (max-width: 479px) {
  
