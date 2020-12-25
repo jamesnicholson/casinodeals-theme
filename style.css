@@ -211,23 +211,28 @@ h1, h2 {
     background-size: cover;
     background-position: center;
 }
+.space-bonuses-archive-item-code{
+    cursor: pointer; 
+    display: block;
+    width: 100%;
+}
+.space-bonuses-archive-item-code:hover .space-bonuses-archive-item-code-title span{
+    transition: all 0.2s ease;
+    color: #ffffff;
+}
 .space-bonuses-archive-item.space-dark-style .space-bonuses-archive-item-code-value {
     color: #fff;
     border: 2px solid #777777;
 }
 .space-bonuses-archive-item-code:hover .space-bonuses-archive-item-code-value{
-    transition: all .5s ease;
+    transition: all .3s ease;
     color: #ed6a5a !important;
     border: 2px solid #ed6a5a !important;
 
 }
-.space-bonuses-archive-item-code-value:hover .space-bonuses-archive-item-code-title{
-    transition: all 0.2s ease;
-    color: #fff !important;
-}
-.space-bonuses-archive-item.space-dark-style:hover .space-bonuses-archive-item-code-title span {
-    transition: all 0.2s ease;
-    color: #ffffff;
+.space-bonuses-archive-item-code-value.space-bonuses-archive-item-code-title{
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1200px){
