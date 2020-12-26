@@ -234,6 +234,14 @@ h1, h2 {
     transition: all 0.3s ease;
     cursor: pointer;
 }
+.space-games-3-archive-item-button2 a{
+    color: #fff;
+    border: 2px solid #777777;
+}
+.space-games-3-archive-item-button2 a:hover {
+    color: #ed6a5a !important;
+    border: 2px solid #ed6a5a !important;
+}
 
 @media screen and (max-width: 1200px){
     .space-rating-star-wrap{
