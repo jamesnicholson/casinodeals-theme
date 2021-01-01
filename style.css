@@ -8,6 +8,12 @@ Template: mercury
 Version: 3.5.1
 */
 @import url("../mercury/style.css");
+h1, h2 { 
+    text-shadow: 0 0 2px #ed6a5a;
+}
+h3, h4, h5, h6 {
+    text-shadow: 0 0 2px #ababab;
+}
 
 .custom-top-footer {
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -111,15 +117,49 @@ span.logo-bolder{
     text-shadow: 0 0 2px #ed6a5a;
     padding-right: 5px;
 }
-.space-companies-archive-item-title a{
+.space-companies-archive-item-title {
+    margin-bottom: 0;
+}
+.space-companies-archive-item-title a {
     line-height: 1.1em;
-    text-shadow: 0 0 2px #ed6a5a;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background: #ed6a5a;
+    padding: 6px;
+    border-radius: 5px 5px 0px 0px;
+    color: #f5f6fa;
 }
-h1, h2 { 
-    text-shadow: 0 0 2px #ed6a5a;
+.space-companies-archive-item-img a{
+    background: #ed6a5a;
+    display: inline-block;
+    border-radius: 100px;
 }
- h3, h4, h5, h6 {
-    text-shadow: 0 0 2px #ababab;
+.space-companies-archive-item img {
+    margin: 20px;
+}
+.space-companies-archive-item-short-desc {
+    font-weight: 600;
+    line-height: 1.45em;
+    color: #2e3246;
+    font-size: 1.3em;
+}
+.space-companies-archive-item-button a{
+    width: 100%;
+}
+.space-companies-archive-item-title a:hover {
+    color: #2e3246;
+}
+.space-companies-archive-item-wrap {
+    padding: 45px 30px 30px;
+    border-bottom: 5px solid #ed6a5a;
+    border-radius: 0 0 5px 5px;
+}
+.fas.fa-fire.top-casino-badge {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 1.5em;
 }
 .space-pros-ins:before{
 	content: "\f005";
@@ -242,7 +282,46 @@ h1, h2 {
     color: #ed6a5a !important;
     border: 2px solid #ed6a5a !important;
 }
+/*.space-casinos-3-archive-item-ins:hover {
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,.3), -15px -15px 0px 0px #fb968b;
+}
 
+.space-casinos-3-archive-item-ins{
+    content: "Play Now";
+    font-size: large;
+}*/
+.space-casinos-3-archive-item-button-ins:hover:after{
+    border-radius: 25px;
+    position: absolute;
+    mix-blend-mode: hard-light;
+}
+.fa-award:before {
+    content: "\f559";
+    font-size: 3em;
+}
+.top-casino-badge:after{
+    content: '';
+
+}
+.home-page .textwidget{
+    font-size: 18px;
+}
+.textwidget:before {
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight:900;
+    content: '\f522';
+}
+
+.space-page-content p {
+    padding-bottom: 0;
+    font-size: 18px;
+    line-height: 22px;
+}
+.space-page-content ul li {
+    padding: 5px 5px 0px 35px;
+    position: relative;
+    font-size: 18px;
+}
 @media screen and (max-width: 1200px){
     .space-rating-star-wrap{
         width: 25px;
