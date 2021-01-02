@@ -131,24 +131,35 @@ span.logo-bolder{
     color: #f5f6fa;
 }
 .space-companies-archive-item-img a{
-    background: #ed6a5a;
     display: inline-block;
     border-radius: 100px;
+    border: 7px solid #ed6a5a;
 }
-.space-companies-archive-item img {
-    margin: 20px;
+.space-companies-archive-item-button.review{
+    margin-top: 10px;
+}
+.space-companies-archive-item-button.review a {
+    background-color: #638ce8;
+    color: #132a54;
+    padding: 13px 15px;
 }
 .space-companies-archive-item-short-desc {
     font-weight: 600;
     line-height: 1.45em;
     color: #2e3246;
     font-size: 1.3em;
+    min-height: 125px;
+    display: flex;
+    align-items: center;
 }
 .space-companies-archive-item-button a{
     width: 100%;
 }
 .space-companies-archive-item-title a:hover {
     color: #2e3246;
+}
+.space-companies-archive-item-wrap.big{
+    padding: 25px;
 }
 .space-companies-archive-item-wrap {
     padding: 45px 30px 30px;
@@ -285,7 +296,11 @@ span.logo-bolder{
 /*.space-casinos-3-archive-item-ins:hover {
     box-shadow: 0px 0px 35px 0px rgba(0,0,0,.3), -15px -15px 0px 0px #fb968b;
 }
-
+.textwidget:before {
+    font-family: 'Font Awesome 5 Free' !important;
+    font-weight:900;
+    content: '\f522';
+}
 .space-casinos-3-archive-item-ins{
     content: "Play Now";
     font-size: large;
@@ -306,11 +321,7 @@ span.logo-bolder{
 .home-page .textwidget{
     font-size: 18px;
 }
-.textwidget:before {
-    font-family: 'Font Awesome 5 Free' !important;
-    font-weight:900;
-    content: '\f522';
-}
+
 
 .space-page-content p {
     padding-bottom: 0;
