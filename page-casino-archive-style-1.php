@@ -70,7 +70,6 @@ Template Name: Casinos Archive Style #1
 			} ?>
 
 			<div class="space-companies-archive-items box-100 relative">
-				<p>James</p>
 				<?php
 				$paged = $wp_query->get( 'paged' );
 				$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;

@@ -10,11 +10,15 @@ Version: 3.5.1
 @import url("../mercury/style.css");
 h1, h2 { 
     text-shadow: 0 0 2px #ed6a5a;
+    padding-bottom: 5px;
 }
 h3, h4, h5, h6 {
     text-shadow: 0 0 2px #ababab;
+    padding-bottom: 5px;
 }
-
+.home-page .textwidget h2, .home-page .textwidget h3, .home-page .textwidget h4, .home-page .textwidget h5, .home-page .textwidget h6 {
+    margin: 5px 0;
+}
 .custom-top-footer {
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
@@ -53,6 +57,11 @@ span.logo-bolder{
     text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
     color: #ed6a5a !important;
 }
+
+.space-mobile-menu-header span{
+    font-weight: bold;
+    font-size: 1em;
+}
 .space-header-logo .logo-bolder{
     width: auto;
     display: inline-block;
@@ -60,10 +69,6 @@ span.logo-bolder{
     font-weight: bold;
     text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
     color: #ed6a5a !important;
-}
-.space-mobile-menu-header span{
-    font-weight: bold;
-    font-size: 1em;
 }
 .space-header-logo a.text-logo{
     padding-bottom: 2px;
@@ -84,15 +89,16 @@ span.logo-bolder{
     text-shadow: -1px -1px 0px rgba(255,255,255,.3), 1px 1px 0px rgba(0,0,0,.8);
 }
 .space-block-title span{
-    padding-left: 6px;
-    font-size: 1.4em;
-    letter-spacing: -1px;
+    padding-left: 35px;
+    font-size: 1.5em;
     letter-spacing: -1px;
     text-shadow: 1px 1px white;
 }
 .space-header-logo span{
-    line-height: .75em;
-    padding-left: 1px;
+    padding-left: 0;
+    font-size: 0.8em;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px white;
 }
 .space-mobile-menu .space-mobile-menu-header a {
     color: #2d3436;
@@ -155,6 +161,15 @@ span.logo-bolder{
 .space-companies-archive-item-button a{
     width: 100%;
 }
+.space-companies-archive-item-button a:hover{
+    background-color: #d42d2d;
+}
+.space-companies-archive-item-button.review a:hover{
+    color: #2e3246;
+}
+.space-companies-archive-item-button.review a:hover{
+    background-color: #4b69af;
+}
 .space-companies-archive-item-title a:hover {
     color: #2e3246;
 }
@@ -168,12 +183,38 @@ span.logo-bolder{
 }
 .space-companies-archive-item img{
     max-width: 175px;
+    width: 100% !important;
 }
 .fas.fa-fire.top-casino-badge {
     position: absolute;
     top: 5px;
     left: 10px;
     font-size: 1.5em;
+}
+i.fas.fa-certificate.top-casino-badge {
+    position: absolute;
+    top: -21px;
+    left: -16px;
+    color: #ed6a5a;
+    font-size: 5em;
+}
+i.fas.fa-certificate.top-casino-badge::after{
+    content: "\f0a3";
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    color: #e88d81;
+    font-size: 0.8em;
+}
+.fa-certificate-text{
+    font-size: 0.33em;
+    color: #2e3246;
+    position: absolute;
+    left: 19px;
+    z-index: 9;
+    top: 26px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px #ced0da;
 }
 .space-pros-ins:before{
 	content: "\f005";
@@ -282,7 +323,9 @@ span.logo-bolder{
     transition: all .3s ease;
     color: #ed6a5a !important;
     border: 2px solid #ed6a5a !important;
-
+}
+.space-companies-home-widget .space-block-title {
+    padding-bottom: 30px;
 }
 .space-bonuses-archive-item-code-value.space-bonuses-archive-item-code-title{
     transition: all 0.3s ease;
@@ -314,10 +357,12 @@ span.logo-bolder{
     mix-blend-mode: hard-light;
 }
 .fa-award:before {
+    font-family: 'Font Awesome 5 Free' !important;
     content: "\f559";
     font-size: 3em;
 }
 .top-casino-badge:after{
+    
     content: '';
 
 }
@@ -336,11 +381,28 @@ span.logo-bolder{
     position: relative;
     font-size: 18px;
 }
+
+.space-block-title:before{
+    font-family: 'Font Awesome 5 Free' !important;
+    content: '\f005';
+    color: #ffd32a!important;
+    padding-right: 0px;
+    font-size: 1.5em;
+    text-shadow: -1px -1px 0px rgba(255,255,255,.3), 1px 1px 0px rgba(0,0,0,.8);
+    position: absolute;
+    left: 5px;
+}
+
+
+
 @media screen and (max-width: 1200px){
     .space-rating-star-wrap{
         width: 25px;
         height: 25px;
         line-height: 25px;
+    }
+    .space-companies-home-widget-ins .space-companies-archive-item img{
+        width: 100%;
     }
 }
 
@@ -374,15 +436,24 @@ span.logo-bolder{
     }
 }
 @media only screen and (max-width: 479px) {
- 
+    h1, h1 a {
+        font-size: 2.5em;
+        line-height: 1em;
+    }
+
+    .space-companies-home-widget-ins .space-companies-archive-item-rating .star-rating .star {
+        font-size: 1em;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    .space-companies-archive-item img {
+        width: 125px;
+    }
     .space-widget{
         width: auto;
     }
-    .space-header-logo-ins {
-        margin: 6px 8px 0;
-    }
     .space-block-title span{
-        font-size: 1.2em;
+        font-size: 1.2em; 
     }
     .space-aces-single-bonus-info-code-button{
         padding-top: 5px;
@@ -405,6 +476,20 @@ span.logo-bolder{
     .space-companies-archive-item-img a{
         border: 4px solid #ed6a5a;
     }
+
+    .space-companies-archive-item-rating .star-rating .star {
+        font-size: 1em !important;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    .space-companies-archive-item .space-companies-archive-item-short-desc{
+        display: block;
+        padding-top: 10px;
+    }
+    .space-companies-home-widget .space-block-title {
+        padding-bottom: 40px;
+    }
+
 }
 @media only screen and (max-width: 410px) {
     .space-games-archive-items{
@@ -413,7 +498,25 @@ span.logo-bolder{
     .space-games-archive-item {
         width: 100% !important;
     }
-    .space-games-archive-item-img a {
+    .space-companies-archive-item-wrap .space-games-archive-item-img a {
         height: 175px;
+    }
+    .space-companies-archive-item {
+        width: 100% !important;
+        float: none;
+    }
+    .space-companies-archive-item .space-companies-archive-item-short-desc{
+        font-size: 1.7em;
+        min-height: auto;
+       
+    }
+    .space-companies-archive-item-title a {
+        font-size: 1.8em !important;
+    }
+    .space-companies-archive-item-button a{
+        font-size: 1.6em !important;
+    }
+    .space-header-logo a.text-logo{
+        font-size: 1.4em;
     }
 }

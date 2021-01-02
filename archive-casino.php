@@ -72,8 +72,7 @@ if ( get_option( 'casinos_section_name') ) {
 			<div class="space-companies-archive-items box-100 relative">
 
 				<?php
-				echo "<script>console.log('hello 1');</script>";
-
+			
 				$casinos_archive_style = get_theme_mod('mercury_casino_archive_style');
 				
 				if ($casinos_archive_style == 4 || $casinos_archive_style == 7 || $casinos_archive_style == 8) {
@@ -88,7 +87,6 @@ if ( get_option( 'casinos_section_name') ) {
 					));
 
 				}else if($casinos_archive_style == 1){
-					echo "<script>console.log('hello james');</script>";
 					$paged = $wp_query->get( 'paged' );
 					$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
 					$wp_query = new WP_Query(array(
